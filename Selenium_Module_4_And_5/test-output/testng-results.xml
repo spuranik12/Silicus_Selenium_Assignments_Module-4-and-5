@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Selenium_Module 4 and 5" duration-ms="67444" started-at="2017-10-27T12:53:43Z" finished-at="2017-10-27T12:54:50Z">
+    <groups>
+    </groups>
+    <test name="VerifyLoginWithInavlidCredentials" duration-ms="17202" started-at="2017-10-27T12:53:43Z" finished-at="2017-10-27T12:54:00Z">
+      <class name="testClasses.LoginPageTest">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:testClasses.LoginPageTest@5c3bd550]" name="openBrowser" is-config="true" duration-ms="9312" started-at="2017-10-27T18:23:43Z" finished-at="2017-10-27T18:23:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="loginWithInvalidInfo(java.lang.String, java.lang.String)[pri:0, instance:testClasses.LoginPageTest@5c3bd550]" name="loginWithInvalidInfo" duration-ms="7509" started-at="2017-10-27T18:23:52Z" data-provider="Invalid Login Detials" finished-at="2017-10-27T18:23:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin001]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidInfo -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testClasses.LoginPageTest@5c3bd550]" name="closeBrowser" is-config="true" duration-ms="350" started-at="2017-10-27T18:23:59Z" finished-at="2017-10-27T18:24:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testClasses.LoginPageTest -->
+    </test> <!-- VerifyLoginWithInavlidCredentials -->
+    <test name="VerifyVacancyTab_IsDisplayed" duration-ms="23402" started-at="2017-10-27T12:54:00Z" finished-at="2017-10-27T12:54:23Z">
+      <class name="testClasses.VacancyPageTest">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:testClasses.VacancyPageTest@3fee9989]" name="openBrowser" is-config="true" duration-ms="8930" started-at="2017-10-27T18:24:00Z" finished-at="2017-10-27T18:24:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="loginWithValidInfo(java.lang.String, java.lang.String)[pri:0, instance:testClasses.VacancyPageTest@3fee9989]" name="loginWithValidInfo" duration-ms="6634" started-at="2017-10-27T18:24:09Z" data-provider="Valid Login Detials" finished-at="2017-10-27T18:24:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidInfo -->
+        <test-method status="PASS" signature="openVacancyTab()[pri:0, instance:testClasses.VacancyPageTest@3fee9989]" name="openVacancyTab" duration-ms="7477" started-at="2017-10-27T18:24:15Z" finished-at="2017-10-27T18:24:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openVacancyTab -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testClasses.VacancyPageTest@3fee9989]" name="closeBrowser" is-config="true" duration-ms="357" started-at="2017-10-27T18:24:23Z" finished-at="2017-10-27T18:24:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testClasses.VacancyPageTest -->
+    </test> <!-- VerifyVacancyTab_IsDisplayed -->
+    <test name="VerifyGeneralInfo_IsDisplayed" duration-ms="26769" started-at="2017-10-27T12:54:23Z" finished-at="2017-10-27T12:54:50Z">
+      <class name="testClasses.GeneralInfoPageTest">
+        <test-method status="PASS" signature="openBrowser(java.lang.String)[pri:0, instance:testClasses.GeneralInfoPageTest@5f2108b5]" name="openBrowser" is-config="true" duration-ms="8915" started-at="2017-10-27T18:24:23Z" finished-at="2017-10-27T18:24:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="loginWithValidInfo(java.lang.String, java.lang.String)[pri:0, instance:testClasses.GeneralInfoPageTest@5f2108b5]" name="loginWithValidInfo" duration-ms="6671" started-at="2017-10-27T18:24:32Z" data-provider="Valid Login Detials" finished-at="2017-10-27T18:24:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidInfo -->
+        <test-method status="PASS" signature="openAdminPage()[pri:0, instance:testClasses.GeneralInfoPageTest@5f2108b5]" name="openAdminPage" duration-ms="10824" started-at="2017-10-27T18:24:39Z" finished-at="2017-10-27T18:24:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAdminPage -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testClasses.GeneralInfoPageTest@5f2108b5]" name="closeBrowser" is-config="true" duration-ms="351" started-at="2017-10-27T18:24:50Z" finished-at="2017-10-27T18:24:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testClasses.GeneralInfoPageTest -->
+    </test> <!-- VerifyGeneralInfo_IsDisplayed -->
+  </suite> <!-- Selenium_Module 4 and 5 -->
+</testng-results>

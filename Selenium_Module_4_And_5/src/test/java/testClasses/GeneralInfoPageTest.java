@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageClasses.AdminPage;
+import pageClasses.GeneralInformationPage;
 import pageClasses.HomePage;
 import pageClasses.LoginPage;
 import utilities.DataProviderClass;
@@ -24,6 +25,17 @@ public class GeneralInfoPageTest extends BaseTest {
 	public void openAdminPage() throws InterruptedException{ 
 		AdminPage ap = new AdminPage(driver);
 		ap.clickOnAdminLink();
-		ap.clickOnOrganizationLink();
+		ap.openGeneralInfo();
+		Assert.assertTrue(ap.verifyGeneralInfoPage());
+		System.out.println(ap.dispGeneralInfoPageHeader());
+	}
+	
+	@Test(priority = 3)
+	public void printGeneralInfoPageDetails() {
+		GeneralInformationPage gp = new GeneralInformationPage(driver);
+		gp.displayOrgName();
+		gp.displayOrgTaxID();
+		gp.displayNumOfEmployees();
+		gp.displayRegistrationNum();
 	}
 }

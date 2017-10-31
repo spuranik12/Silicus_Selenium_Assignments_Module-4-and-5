@@ -23,37 +23,37 @@ public class BaseTest {
 	}
 	
 	//*****Connecting to cloud*****
-//	@BeforeTest
-//	@Parameters({"Browser"})
-//	public void openBrowser(String browserName) throws MalformedURLException{
-//		
-//		String URL = "http://opensource.demo.orangehrmlive.com/";
-//		
-//		//setting capabilities
-//		DesiredCapabilities cap = null;
-//		if(browserName.equalsIgnoreCase("firefox")){
-//			cap = new DesiredCapabilities();
-//			cap.setPlatform(Platform.WIN8_1);
-//			cap.setBrowserName(browserName);
-//			cap.setCapability("Version", "43.0");
-//		}
-//		if(browserName.equalsIgnoreCase("IPAD")){
-//			cap = new DesiredCapabilities();
-//			DesiredCapabilities.ipad();
-//			cap.setPlatform(Platform.ANY);
-//			cap.setBrowserName(browserName);
-//		}
-//		
-//		//Sauce Labs connection
-//		String USERNAME = "spuranik";
-//		String ACCESS_KEY = "736a3a0f-ecb2-426a-bcd2-95c316708ce1";
-//		String CLOUD_URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
-//		
-//		//Passing capabilities to sauce labs
-//		driver = new RemoteWebDriver(new URL(CLOUD_URL), cap);
-//		driver.manage().window().maximize();
-//		driver.get(URL); 
-//	}
+	@BeforeTest
+	@Parameters({"Browser"})
+	public void openBrowser(String browserName) throws MalformedURLException{
+		
+		String URL = "http://opensource.demo.orangehrmlive.com/";
+		
+		//setting capabilities
+		DesiredCapabilities cap = null;
+		if(browserName.equalsIgnoreCase("firefox")){
+			cap = new DesiredCapabilities();
+			cap.setPlatform(Platform.WIN8_1);
+			cap.setBrowserName(browserName);
+			cap.setCapability("Version", "45.0");
+		}
+		if(browserName.equalsIgnoreCase("IPAD")){
+			cap = new DesiredCapabilities();
+			DesiredCapabilities.ipad();
+			cap.setPlatform(Platform.ANY);
+			cap.setBrowserName(browserName);
+		}
+		
+		//Sauce Labs connection
+		String USERNAME = "spuranik";
+		String ACCESS_KEY = "736a3a0f-ecb2-426a-bcd2-95c316708ce1";
+		String CLOUD_URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
+		
+		//Passing capabilities to sauce labs
+		driver = new RemoteWebDriver(new URL(CLOUD_URL), cap);
+		driver.manage().window().maximize();
+		driver.get(URL); 
+	}
 	
 	//*****Executing using selenium grid*****
 //	@BeforeTest
@@ -80,22 +80,22 @@ public class BaseTest {
 //	}
 	
 	//*****Normal execution using TestNg****
-	@BeforeTest
-	@Parameters({"Browser"})
-	public void openBrowser(String browserName){
-		if(browserName.equalsIgnoreCase("firefox")){
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/allDrivers/geckodriver.exe");
-			driver = new FirefoxDriver();
-			driver.manage().window().maximize();
-			driver.get("http://opensource.demo.orangehrmlive.com/");
-		}
-		if(browserName.equalsIgnoreCase("chrome")){
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/allDrivers/chromedriver.exe");
-			driver = new ChromeDriver();
-			driver.manage().window().maximize();
-			driver.get("http://opensource.demo.orangehrmlive.com/");
-		}
-	}
+//	@BeforeTest 
+//	@Parameters({"Browser"})
+//	public void openBrowser(String browserName){
+//		if(browserName.equalsIgnoreCase("firefox")){
+//			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/allDrivers/geckodriver.exe");
+//			driver = new FirefoxDriver();
+//			driver.manage().window().maximize();
+//			driver.get("http://opensource.demo.orangehrmlive.com/");
+//		}
+//		if(browserName.equalsIgnoreCase("chrome")){
+//			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/allDrivers/chromedriver.exe");
+//			driver = new ChromeDriver();
+//			driver.manage().window().maximize();
+//			driver.get("http://opensource.demo.orangehrmlive.com/"); 
+//		}
+//	}
 	
 	@AfterTest
 	public void closeBrowser(){

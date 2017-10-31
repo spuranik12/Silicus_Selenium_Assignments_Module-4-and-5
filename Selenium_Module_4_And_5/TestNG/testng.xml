@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Selenium_Module 4 and 5">
+
+	<parameter name="Browser" value="firefox"></parameter>
 	
 	<test name="VerifyLoginWithInavlidCredentials">
-	<parameter name="Browser" value="firefox"></parameter>
 		<classes>
 			<class name="testClasses.LoginPageTest" />
 		</classes>
 	</test>
-	
+
 	<test name="VerifyVacancyTab_IsDisplayed">
-	<parameter name="Browser" value="firefox"></parameter>
 		<classes>
 			<class name="testClasses.VacancyPageTest" />
 		</classes>
 	</test>
-	
+
 	<test name="VerifyGeneralInfo_IsDisplayed">
-	<parameter name="Browser" value="firefox"></parameter>
 		<classes>
 			<class name="testClasses.GeneralInfoPageTest" />
 		</classes>
 	</test>
-	
+
 </suite> <!-- Suite -->

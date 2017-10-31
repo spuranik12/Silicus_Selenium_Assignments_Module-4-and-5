@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Selenium_Module_4_and_5">
-                    <span>D:\spuranik\Selenium\FinSys\Selenium_Module_4_And_5\TestNG\testng.xml</span>
+                    <span>C:\Users\spuranik\git\Selenium_Assignments\Selenium_Module_4_5\Selenium_Module_4_And_5\TestNG\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -122,6 +122,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Selenium_Module_4_and_5" title="testClasses.VacancyPageTest" hash-for-method="openVacancyTab">openVacancyTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Selenium_Module_4_and_5" title="testClasses.GeneralInfoPageTest" hash-for-method="printGeneralInfoPageDetails">printGeneralInfoPageDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Selenium_Module_4_and_5 -->
@@ -180,6 +185,13 @@
                   <span class="method-name">openAdminPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="printGeneralInfoPageDetails">
+                  </a> <!-- printGeneralInfoPageDetails -->
+                  <span class="method-name">printGeneralInfoPageDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Selenium_Module_4_and_5-class-passed -->
           <div class="suite-Selenium_Module_4_and_5-class-passed">
@@ -201,27 +213,25 @@
         </div> <!-- panel Selenium_Module_4_and_5 -->
         <div panel-name="test-xml-Selenium_Module_4_and_5" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\spuranik\Selenium\FinSys\Selenium_Module_4_And_5\TestNG\testng.xml</span>
+            <span class="header-content">C:\Users\spuranik\git\Selenium_Assignments\Selenium_Module_4_5\Selenium_Module_4_And_5\TestNG\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Selenium_Module 4 and 5&quot;&gt;
+  &lt;parameter name=&quot;Browser&quot; value=&quot;firefox&quot;/&gt;
   &lt;test name=&quot;VerifyLoginWithInavlidCredentials&quot;&gt;
-    &lt;parameter name=&quot;Browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testClasses.LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- VerifyLoginWithInavlidCredentials --&gt;
   &lt;test name=&quot;VerifyVacancyTab_IsDisplayed&quot;&gt;
-    &lt;parameter name=&quot;Browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testClasses.VacancyPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- VerifyVacancyTab_IsDisplayed --&gt;
   &lt;test name=&quot;VerifyGeneralInfo_IsDisplayed&quot;&gt;
-    &lt;parameter name=&quot;Browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testClasses.GeneralInfoPageTest&quot;/&gt;
     &lt;/classes&gt;
@@ -269,32 +279,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'openAdminPage')
 data.setCell(0, 2, 'testClasses.GeneralInfoPageTest')
-data.setCell(0, 3, 10824);
+data.setCell(0, 3, 11993);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginWithInvalidInfo')
 data.setCell(1, 2, 'testClasses.LoginPageTest')
-data.setCell(1, 3, 7509);
+data.setCell(1, 3, 7729);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'openVacancyTab')
 data.setCell(2, 2, 'testClasses.VacancyPageTest')
-data.setCell(2, 3, 7477);
+data.setCell(2, 3, 7703);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginWithValidInfo')
-data.setCell(3, 2, 'testClasses.GeneralInfoPageTest')
-data.setCell(3, 3, 6671);
+data.setCell(3, 2, 'testClasses.VacancyPageTest')
+data.setCell(3, 3, 7400);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'loginWithValidInfo')
-data.setCell(4, 2, 'testClasses.VacancyPageTest')
-data.setCell(4, 3, 6634);
+data.setCell(4, 2, 'testClasses.GeneralInfoPageTest')
+data.setCell(4, 3, 6925);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'printGeneralInfoPageDetails')
+data.setCell(5, 2, 'testClasses.GeneralInfoPageTest')
+data.setCell(5, 3, 3587);
 window.suiteTableData['Selenium_Module_4_and_5']= { tableData: data, tableDiv: 'times-div-Selenium_Module_4_and_5'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-Selenium_Module_4_and_5">
               </div> <!-- times-div-Selenium_Module_4_and_5 -->
             </div> <!-- times-div -->
@@ -327,49 +341,53 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginWithInvalidInfo(Admin, admin001)</span>
-                <span class="method-start">9335 ms</span>
+                <span class="method-start">12108 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">16849 ms</span>
+                <span class="method-start">19840 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testClasses.VacancyPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser(firefox)</span>
-                <span class="method-start">17251 ms</span>
+                <span class="method-start">20914 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginWithValidInfo(Admin, admin)</span>
-                <span class="method-start">26182 ms</span>
+                <span class="method-start">31840 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">openVacancyTab</span>
-                <span class="method-start">32817 ms</span>
+                <span class="method-start">39241 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">40296 ms</span>
+                <span class="method-start">46946 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testClasses.GeneralInfoPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">openBrowser(firefox)</span>
-                <span class="method-start">40673 ms</span>
+                <span class="method-start">47402 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginWithValidInfo(Admin, admin)</span>
-                <span class="method-start">49588 ms</span>
+                <span class="method-start">58663 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">openAdminPage</span>
-                <span class="method-start">56260 ms</span>
+                <span class="method-start">65588 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">printGeneralInfoPageDetails</span>
+                <span class="method-start">77585 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">67090 ms</span>
+                <span class="method-start">81174 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

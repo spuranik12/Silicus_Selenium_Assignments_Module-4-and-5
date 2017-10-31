@@ -2,63 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Selenium_Module 4 and 5]">
   <parameter name="Browser" value="firefox"/>
-  <test name="VerifyLoginWithInavlidCredentials(failed)">
-    <parameter name="Browser" value="firefox"/>
-    <classes>
-      <class name="testClasses.VacancyPageTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- testClasses.VacancyPageTest -->
-      <class name="testClasses.GeneralInfoPageTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- testClasses.GeneralInfoPageTest -->
-      <class name="testClasses.LoginPageTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="loginWithInvalidInfo" invocation-numbers="0"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- testClasses.LoginPageTest -->
-    </classes>
-  </test> <!-- VerifyLoginWithInavlidCredentials(failed) -->
-  <test name="VerifyVacancyTab_IsDisplayed(failed)">
-    <parameter name="Browser" value="firefox"/>
-    <classes>
-      <class name="testClasses.VacancyPageTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="openVacancyTab"/>
-          <include name="loginWithValidInfo" invocation-numbers="0"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- testClasses.VacancyPageTest -->
-      <class name="testClasses.GeneralInfoPageTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- testClasses.GeneralInfoPageTest -->
-      <class name="testClasses.LoginPageTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- testClasses.LoginPageTest -->
-    </classes>
-  </test> <!-- VerifyVacancyTab_IsDisplayed(failed) -->
   <test name="VerifyGeneralInfo_IsDisplayed(failed)">
-    <parameter name="Browser" value="firefox"/>
     <classes>
       <class name="testClasses.GeneralInfoPageTest">
         <methods>
+          <include name="printGeneralInfoPageDetails"/>
           <include name="closeBrowser"/>
           <include name="openAdminPage"/>
-          <include name="loginWithValidInfo" invocation-numbers="0"/>
           <include name="openBrowser"/>
         </methods>
       </class> <!-- testClasses.GeneralInfoPageTest -->
